@@ -6,4 +6,4 @@
 ## Version: 1.002
 ## Author: MegaRange
 ## Dependencies:
-Useless Addon.xml
+Useless Addon.lua
