@@ -1,8 +1,11 @@
+-- 巫妖王之怒
 -- 技能数据表（spellID）
 Typhoon = 69824			-- 台风（德鲁伊）
 ThunderStorm = 51490	-- 雷霆风暴（萨满）
 FakeDeath = 5384		-- 假死（猎人）
-FrostNova = 865			-- 冰霜新星（法师）
+FrostNova = 122			-- 冰霜新星（法师）
+FrostNova2 = 865		-- 冰霜新星 等级2
+FrostNova3 = 6131		-- 冰霜新星 等级3
 
 -- 事件函数
 -- 喊话仅副本内有效，但是表情什么地方都能用，搞不懂。
@@ -17,7 +20,7 @@ function ProcOnEvent(self, event, ...)
 		elseif SpellID == FakeDeath then
 			SendChatMessage("死掉了。", "Emote")
 		-- 法师冰环
-		elseif SpellID == FrostNova then
+		elseif (SpellID == FrostNova) or (SpellID == FrostNova2) or (SpellID == FrostNova3) then
 			SendChatMessage("冻住，不许走！")
 		end
 	end
