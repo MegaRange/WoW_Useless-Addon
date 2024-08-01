@@ -15,6 +15,7 @@ Modify:
 * Use a text editor(at least notepad) to open `Useless Addon.lua`;
 * Add an `elseif ... then` statement before `end`;
 * Set condition to `SpellID == (Variable or Acutally SpellID number)`;
+* Add things you want to do, like `SendChatMessage()` or `PlaySoundFile()`, you can find API you want on WoWWiki;
 * Save, you might need type `/reload` ingame to reload addons.
 * Additionally, you can open `Useless Addon.toc` and modify `## Interface: (a number)` to update TOC to an acceptable number, this will get rid of checking that "Load outdated addons" tickbox, and will improve stablity and security of the game. (I don't need this because I won't use addons too much, and I often check codes in addon to ensure these addons doing right thing)
 
@@ -34,6 +35,7 @@ Check WoWWiki if you need some information of the addon mechanic.
 * 使用一个文本编辑器打开`Useless Addon.lua`（至少用记事本就可以）；
 * 在`end`语句前面加入一个`elseif ... then`语句；
 * 将条件设置为`SpellID == (变量或者实际的SpellID)`；
+* 加入你想做的事情，比如`SendChatMessage()`或者`PlaySoundFile()`，可以去WoWWiki（英文）寻找你需要的API；
 * 保存，你也许要在游戏中输入`/reload`重载插件。
 * 顺便，你可以打开`Useless Addon.toc`并编辑`## Interface: (数字)`用一个合理的数字更新TOC，这么做可以不用再勾选“加载过期插件”，也能保护游戏的稳定性和安全性。（虽然我不需要，因为我不用太多插件，并且我会检查插件的代码，确保插件正确运行）
 
