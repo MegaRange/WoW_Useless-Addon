@@ -1,0 +1,9 @@
+## Interface: 55945
+## Title: Useless Addon
+## Title-zhCN: 毫无卵用的插件
+## Notes: Useless Addon dat do play sound or something when skill cast successfully. No customizing options.
+## Notes-zhCN: 毫无卵用的插件，技能施放成功时播放声音或做其他事情，无自定义选项。
+## Version: 1.002
+## Author: MegaRange
+## Dependencies:
+Useless Addon.lua
