@@ -1,4 +1,4 @@
-## Interface: 55945
+## Interface: 110002
 ## Title: Useless Addon
 ## Title-zhCN: 毫无卵用的插件
 ## Notes: Useless Addon dat do play sound or something when skill cast successfully. No customizing options.
