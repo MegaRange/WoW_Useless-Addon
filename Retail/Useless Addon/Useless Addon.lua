@@ -5,6 +5,7 @@ ThunderStorm = 51490	-- 雷霆风暴（萨满）
 FeralSpirit = 51533		-- 野性狼魂（萨满）
 FakeDeath = 5384		-- 假死（猎人）
 FrostNova = 122			-- 冰霜新星（法师）
+ShockWave = 157981		-- 冲击波（法师）
 
 -- TODO: 找个更好看的写法，也许效率更高的那种。
 -- 事件函数
@@ -12,8 +13,8 @@ FrostNova = 122			-- 冰霜新星（法师）
 function ProcOnEvent(self, event, ...)
 	local UnitTarget, _, SpellID = select(1, ...)
 	if UnitTarget == "player" then
-		-- 德鲁伊台风萨满雷霆风暴fus ro dah
-		if (SpellID == Typhoon) or (SpellID == ThunderStorm) then
+		-- 德鲁伊台风 萨满雷霆风暴 法师冲击波 fus ro dah
+		if (SpellID == Typhoon) or (SpellID == ThunderStorm) or (SpellID == ShockWave)then
 			PlaySoundFile("Interface\\AddOns\\Useless Addon\\Fus Ro Dah.wav", "SFX")
 			SendChatMessage("Fus ro dah!") 
 		elseif SpellID == FeralSpirit then
